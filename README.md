@@ -1,0 +1,1 @@
+# bilgeadam-rn-egitimi
