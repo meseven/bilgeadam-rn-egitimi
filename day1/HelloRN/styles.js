@@ -1,9 +1,14 @@
 import {StyleSheet} from 'react-native';
 
+let boxGeneral = {
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
   },
   box1: {
     flex: 0.5,
@@ -12,17 +17,15 @@ const styles = StyleSheet.create({
   },
   box3: {
     backgroundColor: 'black',
+    ...boxGeneral,
   },
   box4: {
     backgroundColor: 'brown',
+    ...boxGeneral,
   },
   box5: {
     backgroundColor: 'gray',
-  },
-  boxGeneral: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    ...boxGeneral,
   },
   box2: {
     flex: 0.5,
@@ -32,6 +35,9 @@ const styles = StyleSheet.create({
   },
   whiteColor: {
     color: '#fff',
+  },
+  f: {
+    fontSize: 28,
   },
 });
 
