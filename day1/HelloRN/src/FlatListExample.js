@@ -1,5 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, SafeAreaView, FlatList, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  FlatList,
+  StyleSheet,
+  TextInput,
+} from 'react-native';
 
 import axios from 'axios';
 
@@ -14,6 +21,7 @@ const Item = ({item}) => (
 const FlatListExample = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [text, setText] = useState('');
 
   const renderItem = ({item}) => <Item item={item} />;
 
